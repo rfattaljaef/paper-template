@@ -2,7 +2,7 @@
 # global libraries used everywhere #
 ####################################
 
-mran.date <- "2019-09-01"
+mran.date <- "2020-11-30"
 options(repos=paste0("https://cran.microsoft.com/snapshot/",mran.date,"/"))
 
 
@@ -17,6 +17,6 @@ pkgTest <- function(x)
 	return("OK")
 }
 
-global.libraries <- c("dplyr","devtools","rprojroot","tictoc")
+global.libraries <- c("dplyr","haven","foreign","ggplot2","ggrepel","gridextra")
 
 results <- sapply(as.list(global.libraries), pkgTest)
